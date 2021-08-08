@@ -34,3 +34,10 @@ print(g(2))
 
 full_name = lambda fn, ln: fn.strip().title() + " " + ln.strip().title()
 print(full_name("   Thomas", "GERTRUD"))
+
+scifi_authors = ["Isaac Asimov", "Ray Bradbury", "Robert Heinlein", "Arthur C. Clarke", "Frank Herbert", "Orson Scott Card", "Douglas Adams", "H. G. Wells", "Leigh Brackett"]
+
+# help(scifi_authors.sort)
+
+scifi_authors.sort(key=lambda name: name.split(" ")[-1].lower())
+print(scifi_authors)
