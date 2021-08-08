@@ -26,3 +26,7 @@ print(f(2))
 
 # Anonymous Functions = Lambda Expressions (they mean the same thing)
 
+lambda x: 3*x + 1
+g = lambda x : 3*x + 1
+print(g(2))
+
